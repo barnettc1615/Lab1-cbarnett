@@ -1,0 +1,53 @@
+cd htdocs\Lab1-cbarnett
+# contains index.php file
+git init # creates a local git repository. type dir /a as it is hidden or cd .git
+git commit -m "first commit" # -m is the commit message to discribe 
+# success and shows untracked file index.php - see also comments on the screen
+C:\xampp\htdocs\Lab1-cbarnett>git commit -m "first commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.php
+
+C:\xampp\htdocs\Lab1-cbarnett>git add .
+warning: LF will be replaced by CRLF in index.php.
+The file will have its original line endings in your working directory
+
+C:\xampp\htdocs\Lab1-cbarnett>git commit -m "first commit"
+[master (root-commit) f68d0d4] first commit
+ 1 file changed, 12 insertions(+)
+ create mode 100644 index.php
+
+C:\xampp\htdocs\Lab1-cbarnett>
+## now the index.php file has been added to my local repository
+
+C:\xampp\htdocs\Lab1-cbarnett>git commit -m "first commit"
+[master (root-commit) f68d0d4] first commit
+ 1 file changed, 12 insertions(+)
+ create mode 100644 index.php
+
+C:\xampp\htdocs\Lab1-cbarnett>git remote add origin https://github.com/barnettc1615/Lab1-cbarnett.git
+
+C:\xampp\htdocs\Lab1-cbarnett>git branch -M main
+
+C:\xampp\htdocs\Lab1-cbarnett>git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 351 bytes | 351.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/barnettc1615/Lab1-cbarnett.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+C:\xampp\htdocs\Lab1-cbarnett>
+
+
+
+
+
